@@ -1,19 +1,51 @@
 *{
-    background-color: #222A68;
+    background-color: #02093bf6;
     padding: 0;
     margin: 0;
     border: none;
     color: #bba4ce;
     font-family: monospace;
+    box-sizing: border-box;
 }
 
-.logo-layer{
-    width: 220px;
-    height: 219px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-bottom: 100px;
 }
+
+.net {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-right: 10px;
+}
+
+.logo-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo-layer img {
+    width: 75px;
+}
+
+.net img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.logo-layer span {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(212, 202, 202);
+}
+
 
 h2{
     text-align: center;
@@ -31,9 +63,11 @@ h4{
 .inline{
     display: inline-block;
 }
+
 article{
     margin: 20px;
 }
+
 .text2 .inlines {
     display: inline-block;
     max-width: 380px;
@@ -41,33 +75,40 @@ article{
     margin: 10px 2px;
     text-align: left;
 }
+
 .lights1{
     list-style-type: none;
     display: inline;
 
 }
+
 .highlights1{
     display: inline-block;
     margin: 0 5px;
 }
+
 .highlights,
 .highlights1{
     font-weight: bold;
     color: #E2ADF2;
 }
+
 .text2{
     text-align: center;
 }
+
 .grid1 {
     max-width: 134.5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .space {
     display: inline-block;
     margin-right: 10px;
 }
+
 .grid1 .space img {
     width: 30px;
     height: 30px;
