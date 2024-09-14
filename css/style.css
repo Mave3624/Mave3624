@@ -24,14 +24,11 @@
 }
 
 .logo-layer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+    margin: 10px 0;
 }
 
 .logo-layer img {
-    width: 75px;
+    width: 200px;
 }
 
 .net img {
