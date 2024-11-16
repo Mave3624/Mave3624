@@ -2,104 +2,76 @@
     padding: 0;
     margin: 0;
     border: none;
-    color: #9EC5AB;
-    font-family: monospace;
+    color: #bfc9c2;
     box-sizing: border-box;
 }
 body {
-    background-color: #32746D;
+    background-color: #022e2a;
 }
+
 .logo-layer {
-    background-color: #011502;
-    padding: 7.5px;
-    position: fixed;
-    right: 0;
-    top: 0;
+    display:flex;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #033135;
+    padding: 7px;
     width: 100%;
 }
-main {
-    margin-top: 80px;
-}
+
 .logo-layer img {
     width: 150px;
 }
-h2{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #01200F;
-    margin: 5px 0 10px 0;
-    font-size: large;
-}
-h4{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    margin: 0 0 10px 0;
-    font-size: small;
-}
-.inline{
-    display: inline-block;
-}
-article{
-    margin: 18px;
-}
 
-.text2 .inlines {
-    display: inline-block;
-    max-width: 380px;
-    min-height: 40px;
-    margin: 10px 2px;
-    text-align: left;
-}
-
-.lights1{
-    list-style-type: none;
-    display: inline;
-
-}
-
-.highlights1{
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.highlights,
-.highlights1{
-    font-weight: bold;
-    color: #01200F;
-}
-
-.text2{
-    text-align: center;
-}
-
-.grid1 {
-    max-width: 134.5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.space {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.grid1 .space img {
-    width: 30px;
-    height: 30px;
-}
 .net {
     display: flex;
-    justify-content: center;
+    flex: 1;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    font-family: monospace;
+    gap: 5px;
+    max-width: 200px;
 }
+
 a {
     text-decoration: none;
     font-family: monospace;
     font-weight: bolder;
 }
-footer {
-    background-color: #011502;
-    padding: 10px 0;
+
+.notice {
+    margin: 80px auto;
+    padding: 10px;
+    text-align: center;
+    max-width: 500px;
+    transition: 1000ms border-color linear 300ms;
+}
+
+.notice>h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.quick {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.caution {
+    margin: 10px 0;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.input-section{
+    margin: 10px 0;
+}
+
+#input, #button {
+    background-color: #cef0f3;
+    min-width: 50px;
+    border-radius: 5px;
+    height: 20px;
+    color: black;
 }
