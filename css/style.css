@@ -1,6 +1,6 @@
 
 body {
-    background-image: url('https://pixy.org/src/477/4774988.jpg');
+    background-image: url('https://github.com/Mave3624/Mave3624/blob/main/img/4774988.jpg?raw=true');
 }
 .logo-layer {
     gap: 25px;
@@ -24,6 +24,13 @@ a {
     max-width: 500px;
     max-height: 250px;
 }
+.gif {
+    animation: play 2s steps(10) infinite;
+}
+@keyframes play {
+    0% {background-position: 0 0;}
+    100% {background-position: -500px 0;}
+}
 
 .introduction {
     text-align: center;
@@ -33,10 +40,10 @@ a {
 }
 
 .introduction > h1 {
-    font-size: 18px;
+    font-size: 15px;
 }
 .introduction > h3 {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .net {
