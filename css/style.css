@@ -19,6 +19,7 @@ a {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    margin-top: -50px;
 }
 .video>img {
     max-width: 500px;
