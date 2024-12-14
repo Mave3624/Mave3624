@@ -1,6 +1,7 @@
 
 body {
-    background-image: url('https://github.com/Mave3624/Mave3624/blob/main/img/4774988.jpg?raw=true');
+    /* background-image: url('https://github.com/Mave3624/Mave3624/blob/main/img/4774988.jpg?raw=true'); */
+    background-color: rgb(36, 59, 52);
 }
 .logo-layer {
     gap: 25px;
@@ -19,40 +20,68 @@ a {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    margin-top: -50px;
 }
 .video>img {
-    max-width: 500px;
+    padding: 5%;
+    min-width: 50%;
+    max-width: 80%;
     max-height: 250px;
-}
-.gif {
-    animation: play 2s steps(10) infinite;
-}
-@keyframes play {
-    0% {background-position: 0 0;}
-    100% {background-position: -500px 0;}
+    
 }
 
 .introduction {
     text-align: center;
-    color: rgb(255, 212, 118);
+    color: rgb(182, 197, 129);
     margin: 10px auto 0 auto;
-    max-width: 800px;
+    font-family: monospace;
 }
 
-.introduction > h1 {
-    font-size: 15px;
+.introduction > p {
+    font-size: 16px;
 }
-.introduction > h3 {
-    font-size: 12px;
+#line {
+    font-size: 18px;
+    color: rgb(182, 197, 129);
+    text-align: center;
+}
+
+footer > h2 {
+    font-size: 15px;
+    color: rgb(182, 197, 129);
+    margin: 10px auto 0 auto;
 }
 
 .net {
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
     justify-content: space-between;
     align-items: center;
     font-family: monospace;
-    gap: 5px;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.imgHolder {
+    min-width: 150px;
+    min-height: 150px;
     max-width: 200px;
+    max-height: 200px;
+    background-color: red;
+}
+.textHolder {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(70, 14, 14);
+}
+.showcase {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
