@@ -1,26 +1,17 @@
 
 body {
-    /* background-image: url('https://github.com/Mave3624/Mave3624/blob/main/img/4774988.jpg?raw=true'); */
     background-color: rgb(36, 59, 52);
 }
 .logo-layer {
-    gap: 25px;
     background-color: transparent;
     padding: 7px;
-}
-
-a {
-    color: #bfc9c2;
-    text-decoration: none;
-    font-family: monospace;
-    font-weight: bolder;
 }
 
 .video {
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
+
 .video>img {
     padding: 5%;
     min-width: 50%;
@@ -29,37 +20,48 @@ a {
     
 }
 
-.introduction {
+.introduction,.about {
     text-align: center;
-    color: rgb(182, 197, 129);
+    color: rgb(160, 197, 129);
     margin: 10px auto 0 auto;
-    font-family: monospace;
-}
-
-.introduction > p {
-    font-size: 16px;
-}
-#line {
-    font-size: 18px;
-    color: rgb(182, 197, 129);
-    text-align: center;
-}
-
-footer > h2 {
+    font-family: sans-serif;
     font-size: 15px;
-    color: rgb(182, 197, 129);
-    margin: 10px auto 0 auto;
 }
 
-.net {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
+header {
     font-family: monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px 0 ;
+    color: rgb(182, 197, 129);
+}
+.inshot {
+    display: flex;
+    justify-content: center;
+}
+.inshot > img {
+    max-width: 500px;
+    min-width: 350px;
+}
+
+main {
+    max-width: 1000px;
     margin: 0 auto;
-    max-width: 300px;
+}
+
+footer > p {
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(160, 197, 129);
+    margin: 10px auto 0 auto;
+    text-align: center;
+}
+
+a {
+    color: rgb(182, 197, 129);
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bolder;
 }
 
 .imgHolder {
