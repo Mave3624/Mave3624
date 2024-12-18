@@ -25,14 +25,13 @@ body {
     text-align:justify;
     color: rgb(160, 197, 129);
     margin: 10px auto 0 auto;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 15px;
 }
 
 header {
     font-family: monospace;
     font-size: 18px;
-    font-weight: bolder;
     padding: 20px 0 ;
     color: rgb(182, 197, 129);
     text-align: center;
@@ -64,15 +63,16 @@ a {
     text-decoration: none;
     font-family: monospace;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .imgHolder, .imgHolder>img {
     width: 150px;
     height: 150px;
-    border: 1px solid gray;
     border-radius: 5px;
+    transition: 1000ms border-color linear 500ms;
 }
+
 .textHolder {
     width: 150px;
     height: 40px;
