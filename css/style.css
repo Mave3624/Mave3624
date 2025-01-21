@@ -1,53 +1,91 @@
 
+@font-face {
+    font-family: Mave-Font;
+    src: url(/font/Bona_Nova_SC/BonaNovaSC-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Header-Font;
+    src: url(/font/Merienda/Merienda-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --main: Mave-Font, 'Courier New', Courier, monospace;
+    --header: Header-Font, monospace;
+    --main-size: calc(0.6rem + max(0.5vh, 0.5vw));
+    --header-size:calc(0.6rem + max(0.5vh, 0.5vw));
+    --logo-width: clamp(100px, calc(100px + min(10vw, 10vh)), 250px);
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
 body {
     background-color: rgb(36, 59, 52);
 }
 
 .logo-layer {
-    background-color: transparent;
-    padding: 8px;
+    box-sizing: content-box;
+    background-color: rgb(36, 60, 53);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgb(26, 53, 39);
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 15px 0px 10px 10px;
+}
+img[class = "logo"]  {
+    width: var(--logo-width);
+    height: calc(var(--logo-width) / 4.8);
 }
 
 .video {
     display: flex;
     justify-content: center;
 }
-
 .video>img {
-    padding: 5%;
-    min-width: 50%;
-    max-width: 80%;
-    max-height: 250px;
-    
+    box-sizing: border-box;
+    min-width: 40%;
+    max-width: 70%;
+    max-height: 300px;
+    margin: 20px 0px;
 }
 
 .introduction,.about {
+    box-sizing: content-box;
     color: rgb(160, 197, 129);
-    margin: 10px auto 0 auto;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 15px;
-    font-weight: 800;
+    font-family: var(--main);
+    font-size: var(--main-size);
 }
 
 header {
-    font-family: monospace;
-    font-size: 18px;
+    font-family: var(--header);
+    font-size: var(--header-size);
     padding: 20px 0 ;
-    color: rgb(182, 197, 129);
+    color: rgb(200, 198, 129);
     text-align: center;
 }
 .inshot {
     display: flex;
     justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
 }
 .inshot > img {
-    max-width: 500px;
-    min-width: 350px;
+    width: clamp(300px, 50vw, 500px);
 }
 
 main {
+    box-sizing: content-box;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 5px 10px 5px 10px;
 }
 
 footer > p {
