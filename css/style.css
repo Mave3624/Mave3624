@@ -1,14 +1,14 @@
 
 @font-face {
     font-family: Mave-Font;
-    src: url(/font/Bona_Nova_SC/BonaNovaSC-Regular.ttf);
+    src: url(font/Bona_Nova_SC/BonaNovaSC-Regular.ttf);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: Header-Font;
-    src: url(/font/Merienda/Merienda-VariableFont_wght.ttf);
+    src: url(font/Merienda/Merienda-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
