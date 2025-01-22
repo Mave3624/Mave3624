@@ -29,6 +29,8 @@
 }
 body {
     background-color: rgb(36, 59, 52);
+    max-width: 100vh;
+    margin: 0 auto;
 }
 
 .logo-layer {
@@ -51,9 +53,9 @@ img[class = "logo"]  {
 }
 .video>img {
     box-sizing: border-box;
-    min-width: 40%;
-    max-width: 70%;
-    max-height: 300px;
+    min-width: 50%;
+    max-width: 80%;
+    height: 300px;
     margin: 20px 0px;
 }
 
@@ -78,7 +80,7 @@ header {
     border-radius: 5px;
 }
 .inshot > img {
-    width: clamp(300px, 50vw, 500px);
+    width: clamp(max(50%, 320px), 50vw, max(70%, 500px));
 }
 
 main {
