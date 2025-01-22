@@ -60,16 +60,8 @@ img[class = "logo"]  {
 .introduction,.about {
     box-sizing: content-box;
     color: rgb(160, 197, 129);
-<<<<<<< HEAD
     font-family: var(--main);
     font-size: var(--main-size);
-=======
-    margin: 10px auto 0 auto;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 15px;
-    font-weight: 800;
-    text-align: center
->>>>>>> c08cf6d359fd9e5fe127b3b966c09cd892d4195d
 }
 
 header {
