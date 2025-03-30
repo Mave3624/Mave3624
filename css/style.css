@@ -17,46 +17,29 @@
 :root {
     --main: Mave-Font, 'Courier New', Courier, monospace;
     --header: Header-Font, monospace;
-    --main-size: calc(0.6rem + clamp(0rem, max(0.5vh, 0.5vw), 0.4rem));
-    --header-size:calc(0.6rem + max(0.5vh, 0.5vw));
-    --logo-width: clamp(100px, calc(100px + min(10vw, 10vh)), 250px);
+    --main-size: calc(0.5rem + clamp(2px, max(0.5vh, 0.5vw), 0.4rem));
+    --header-size:calc(0.5rem + max(0.5vh, 0.5vw));
+    --img-width: clamp(300px, 30vw, 350px)
 }
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     border: none;
     box-sizing: border-box;
 }
 body {
     background-color: rgb(36, 59, 52);
-    max-width: 100vw;
-    margin: 0 auto;
-}
-
-.logo-layer {
-    box-sizing: content-box;
-    background-color: rgb(36, 60, 53);
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px 1px rgb(26, 53, 39);
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 15px 0px 10px 10px;
-}
-img[class = "logo"]  {
-    width: var(--logo-width);
-    height: calc(var(--logo-width) / 4.8);
 }
 
 .video {
     display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
 }
 .video>img {
-    box-sizing: border-box;
-    min-width: 50%;
-    max-width: 80%;
+    width: clamp(300px, 55%, 450px);
     max-height: 300px;
     margin: 20px 0px;
 }
@@ -82,7 +65,7 @@ header {
     border-radius: 5px;
 }
 .inshot > img {
-    width: clamp(max(50%, 320px), 50vw, max(70%, 500px));
+    width: var(--img-width);
 }
 
 main {
@@ -90,6 +73,21 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 5px 10px 5px 10px;
+}
+.author {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(Auto-fill, minmax(350px, 1fr));
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+.maverick {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -119,16 +117,16 @@ a {
 
 .showcase {
     display: grid;
-    grid-template: auto / repeat(Auto-fit, 300px);
+    grid-template: auto / repeat(Auto-fit, clamp(300px, calc(300px + 10vw), 350px));
     justify-content: center;
     row-gap: 20px;
     column-gap: 10px;
 }
 .project-container {
-    border: 1px solid gray;
+    border: 1px solid rgb(167, 153, 153);
     border-radius: 5px;
-    width: 300px;
-    height: 120px;
+    width: 100%;
+    height: 150px;
     box-sizing: border-box;
     padding: 10px;
 }
@@ -151,13 +149,14 @@ a {
     font-family: cursive, sans-serif, serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     font-weight: 500;
-    color: rgb(97, 97, 97);
+    color: rgb(195, 194, 194);
     overflow: hidden;
     box-sizing: border-box;
     padding: 0px 2px;
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .status-lang {
     display: grid;
@@ -169,7 +168,7 @@ a {
 
 .name> a{
     text-decoration: none;
-    color: rgb(0, 0, 220);
+    color: rgb(10, 214, 255);
     font-weight: 500;
 }
 
@@ -219,8 +218,8 @@ a {
 }
 .status {
     font-family: cursive;
-    font-weight: 500;
-    font-size: 10px;
+    font-weight: 700;
+    font-size: 12px;
     text-align: center;
     text-transform: capitalize;
 }
